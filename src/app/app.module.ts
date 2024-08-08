@@ -6,11 +6,8 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent, EmployeesComponent],
-  imports: [
-    BrowserModule, HttpClientModule, AppRoutingModule
-  ],
+  declarations: [AppComponent, EmployeesComponent],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
