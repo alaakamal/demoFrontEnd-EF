@@ -1,0 +1,53 @@
+<div class="container">
+	<div class="card">
+		<h3 class="text-center">Employees List</h3>
+		<div class="card-body">
+			<table class="table table-dark table-hover">
+				<thead>
+					<tr>
+						<th>EmployeeID</th>
+						<th>ManagerID</th>
+						<th>FirstName</th>
+						<th>LastName</th>
+						<th>Email</th>
+						<th>JobiD</th>
+						<th>PhoneNumber</th>
+						<th>Salary</th>
+						<th>CommissionPCT</th>
+						<th>HireDate</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let employee of employees ">
+						<td>
+							{{employee?.employee_ID}}
+						</td>
+						<td>
+							{{employee?.manager_ID}}
+						</td>
+						<td>
+							{{employee?.first_NAME}}
+						</td>
+						<td>
+							{{employee?.last_NAME}}
+						</td>
+						<td>{{employee?.email}}</td>
+						<td>{{employee?.job_ID}}</td>
+						<td>
+							{{employee?.phone_NUMBER}}
+						</td>
+						<td>
+							{{employee?.salary}}
+						</td>
+						<td>
+							{{employee?.commission_PCT}}
+						</td>
+						<td>
+							{{employee?.hire_DATE | date :'dd-MM-YYYY'}}
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
