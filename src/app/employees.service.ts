@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http'
 import { Employees } from './employees';
-@Injectable({
-  providedIn: 'root'
-})
+
+@Injectable({ providedIn: 'root' })
+
 export class EmployeesService {
   private basUrl = "http://localhost:8081/Employees";
 
