@@ -7,7 +7,7 @@ import { Employees } from './employees';
 })
 export class EmployeesService {
   private basUrl = "http://localhost:8081/Employees";
-  
+
   constructor(private httpClient: HttpClient) { }
 
   getEmployees(): Observable<Employees[]> {

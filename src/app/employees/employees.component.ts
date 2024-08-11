@@ -18,33 +18,4 @@ export class EmployeesComponent implements OnInit {
       console.log(this.employees);
     });
   }
-  /*
-  ngOnInit(): void {
-    this.employeesService.getEmployees().subscribe(data=> {
-      console.log(data);
-      console.log(data.at(1)?.id);
-      console.log(data.at(1)?.employeeid);
-      console.log(data.at(1)?.firstname);
-      console.log(data.at(1)?.lastname);
-      console.log(data.at(1)?.jobid);
-      console.log(data.at(1)?.phonenumber);
-      console.log(data.at(1)?.salary);
-      console.log(data.at(1)?.hiredate);
-      console.log(data.at(1)?.email);
-
-      this.employees = data
-
-      console.log(data.at(1)?.id);
-      console.log(data.at(1)?.employeeid);
-      console.log(data.at(1)?.firstname);
-      console.log(data.at(1)?.lastname);
-      console.log(data.at(1)?.jobid);
-      console.log(data.at(1)?.phonenumber);
-      console.log(data.at(1)?.salary);
-      console.log(data.at(1)?.hiredate);
-      console.log(data.at(1)?.email);
-
-    });
-  }
-  */
 }
