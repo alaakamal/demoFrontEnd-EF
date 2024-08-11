@@ -8,14 +8,14 @@ import { DatePipe } from '@angular/common';
   templateUrl: './employees.component.html',
   styleUrls: ['./employees.component.css']
 })
+
 export class EmployeesComponent implements OnInit {
   employees?: Employees[];
   constructor(private employeesService: EmployeesService) { }
   ngOnInit() {
     this.employeesService.getEmployees().subscribe(employees => {
-      // console.log(employees);
       this.employees = employees;
-      // console.log(this.employees);
-    });
+    }
+    );
   }
 }
