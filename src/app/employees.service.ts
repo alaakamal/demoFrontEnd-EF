@@ -6,13 +6,13 @@ import { Employees } from './employees';
 @Injectable({ providedIn: 'root' })
 
 export class EmployeesService {
-  
-  private basUrl = "http://localhost:8081/Employees";
+
+  private basUrl = "http://localhost:9098/myemp";
 
   constructor(private httpClient: HttpClient) { }
 
   getEmployees(): Observable<Employees[]> {
-    return this.httpClient.get<Employees[]>(`${this.basUrl}`);
+    return this.httpClient.get<Employees[]>(`${this.basUrl}/getalldata`);
   }
 
   createEmployee(employee: Employees): Observable<Object> {

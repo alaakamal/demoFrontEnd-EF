@@ -1,13 +1,13 @@
 export class Employees {
-  employee_ID!: string;
-  first_NAME!: string;
-  last_NAME!: string;
+  employeeId!: number;
+  firstName!: string;
+  lastName!: string;
   email!: string;
-  phone_NUMBER!: string;
-  department_ID!: string;
-  job_ID!: number;
+  phoneNumber!: string;
+  departmentId!: string;
+  jobId!: number;
   salary!: number;
-  hire_DATE!: Date;
-  commission_PCT!: number;
-  manager_ID!: number;
+  hireDate!: Date;
+  commissionPct!: number;
+  managerId!: number;
 }
