@@ -4,10 +4,10 @@ export class Employees {
   lastName!: string;
   email!: string;
   phoneNumber!: string;
-  departmentId!: string;
-  jobId!: number;
+  departmentId!: number;
+  jobId!: string;
   salary!: number;
-  hireDate!: Date;
+  hireDate!: string;
   commissionPct!: number;
   managerId!: number;
 }

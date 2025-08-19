@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Employees } from '../employees';
-import { EmployeesService } from '../employees.service';
+import { NewEmployeeService } from '../new-employee.service';
 
 @Component({
   selector: 'app-update-employee',
@@ -14,7 +14,7 @@ export class UpdateEmployeeComponent implements OnInit {
   employee: Employees = new Employees();
 
   constructor(
-    private employeeService: EmployeesService,
+        private employeeService: NewEmployeeService,
     private route: ActivatedRoute,
     private router: Router
   ) { }
